@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kitapyurdu_clone/utils/colors.dart';
 
 class SearchScreen extends StatefulWidget {
   @override
@@ -8,6 +9,11 @@ class SearchScreen extends StatefulWidget {
 class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Text(
+        "Arama",
+        style: TextStyle(color: MyColor.titleColor, fontSize: 50),
+      ),
+    );
   }
 }

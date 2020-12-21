@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kitapyurdu_clone/utils/colors.dart';
 
 class CampaignScreen extends StatefulWidget {
   @override
@@ -8,6 +9,11 @@ class CampaignScreen extends StatefulWidget {
 class _CampaignScreenState extends State<CampaignScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Text(
+        "Kampanyalar",
+        style: TextStyle(color: MyColor.titleColor, fontSize: 50),
+      ),
+    );
   }
 }

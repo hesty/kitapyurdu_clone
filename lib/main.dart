@@ -28,7 +28,7 @@ class Main extends StatefulWidget {
 }
 
 class _MainState extends State<Main> {
-  int currentIndex = 0;
+  int _currentIndex = 0;
   final List<Widget> children = [
     HomeScreen(),
     CampaignScreen(),
@@ -40,20 +40,20 @@ class _MainState extends State<Main> {
   Widget build(BuildContext context) {
     void onTappedBar(int index) {
       setState(() {
-        currentIndex = index;
+        _currentIndex = index;
       });
     }
 
     return Scaffold(
-        body: children[currentIndex],
+        body: children[_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: MyColor.bottomNavigatoinBarColor,
           selectedItemColor: Colors.amber[800],
           unselectedItemColor: Colors.grey,
           unselectedLabelStyle: TextStyle(color: Colors.white30),
-          onTap: (value) {
-            currentIndex = value;
-          },
+          onTap: onTappedBar,
+          type: BottomNavigationBarType.fixed,
+          currentIndex: _currentIndex,
           items: [
             BottomNavigationBarItem(
                 icon: Icon(Icons.home_outlined), label: 'Anasayfa'),

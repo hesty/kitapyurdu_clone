@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kitapyurdu_clone/utils/colors.dart';
 
 class MyCartScreen extends StatefulWidget {
   @override
@@ -8,6 +9,11 @@ class MyCartScreen extends StatefulWidget {
 class _MyCartScreenState extends State<MyCartScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Text(
+        "Sepetim",
+        style: TextStyle(color: MyColor.titleColor, fontSize: 50),
+      ),
+    );;
   }
 }

@@ -3,10 +3,6 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_slider/image_slider.dart';
-import 'package:kitapyurdu_clone/screens/campaign_screen.dart';
-import 'package:kitapyurdu_clone/screens/categories_screen.dart';
-import 'package:kitapyurdu_clone/screens/my_cart_screen.dart';
-import 'package:kitapyurdu_clone/screens/search_screen.dart';
 import 'package:kitapyurdu_clone/utils/colors.dart';
 import 'package:kitapyurdu_clone/utils/image_url_lists.dart';
 
@@ -19,8 +15,6 @@ class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
   TabController tabController;
 
-
-
   @override
   void initState() {
     super.initState();
@@ -30,9 +24,9 @@ class _HomeScreenState extends State<HomeScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: buildAppBar(),
-        body: buildBody(),
-       // bottomNavigationBar: buildBottomNavigationBar()
+      appBar: buildAppBar(),
+      body: buildBody(),
+      // bottomNavigationBar: buildBottomNavigationBar()
     );
   }
 
@@ -287,14 +281,12 @@ class _HomeScreenState extends State<HomeScreen>
   }
 
   buildBottomNavigationBar() {
-
-
     return BottomNavigationBar(
       backgroundColor: MyColor.bottomNavigatoinBarColor,
       selectedItemColor: Colors.amber[800],
       unselectedItemColor: Colors.grey,
       unselectedLabelStyle: TextStyle(color: Colors.white30),
-    //  onTap: onTappedBar,
+      //  onTap: onTappedBar,
       items: [
         BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined), label: 'Anasayfa'),
