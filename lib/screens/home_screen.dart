@@ -279,25 +279,4 @@ class _HomeScreenState extends State<HomeScreen>
       ),
     );
   }
-
-  buildBottomNavigationBar() {
-    return BottomNavigationBar(
-      backgroundColor: MyColor.bottomNavigatoinBarColor,
-      selectedItemColor: Colors.amber[800],
-      unselectedItemColor: Colors.grey,
-      unselectedLabelStyle: TextStyle(color: Colors.white30),
-      //  onTap: onTappedBar,
-      items: [
-        BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined), label: 'Anasayfa'),
-        BottomNavigationBarItem(
-            icon: Icon(Icons.campaign_outlined), label: 'Kampanyalar'),
-        BottomNavigationBarItem(
-            icon: Icon(Icons.category), label: 'Kategoriler'),
-        BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Arama'),
-        BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart_outlined), label: 'Sepetim'),
-      ],
-    );
-  }
 }
